@@ -18,35 +18,37 @@
     <div class="calculator">
       <div class="calculator-content-wrapper">
         <label class="bill" for="bill-value">Bill</label>
+        <img src="/images/icon-dollar.svg" alt="" id="dollar">
         <input type="number" name="bill-value" id="bill-value">
 
         <p>Select Tip %</p>
         <div class="percentagem-section-1">
-          <input type="submit" value="5%">
-          <input type="submit" value="10%">
-          <input type="submit" value="15%">
+          <input id="btn-5%" type="submit" value="5%">
+          <input id="btn-10%" type="submit" value="10%">
+          <input id="btn-15%" type="submit" value="15%">
         </div>
 
         <div class="percentagem-section-2">
-          <input type="submit" value="25%">
-          <input type="submit" value="50%">
-          <input type="number" value="">
+          <input id="btn-25%" type="submit" value="25%">
+          <input id="btn-50%" type="submit" value="50%">
+          <input type="number" placeholder="custom" value="" id="custom">
         </div>
 
         <label class="number-of-people-label" class="bill" for="bill-value">Number of People</label>
-        <input type="number" name="bill-value" id="bill-value">
+        <input type="number" name="bill-value" id="number-of-people">
       </div>
     </div>
     <div class="display">
       <div class="display-content-wrapper">
         <div class="tip-amount-and-total">
           <p>Tip Amount <br> <em>/ person</em></p>
-          <p id="tip-amount">$0.00</p>
+          <p id="tip-amount-value">$0.00</p>
         </div>
         <div class="tip-amount-and-total">
-          <p>Tip Amount <br> <em>/ person</em></p>
-          <p id="total">$0.00</p>
+          <p>Total <br> <em>/ person</em></p>
+          <p id="total-value">$0.00</p>
         </div>
+       <input id="btn-reset" type="button" value="reset"> 
       </div>
     </div>
   </div>

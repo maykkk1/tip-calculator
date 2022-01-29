@@ -46,6 +46,7 @@ input[type=number] {
     height: 100%;
 }
 .calculator-content-wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 85%;
@@ -58,6 +59,14 @@ input[type=number] {
     font-weight: 700;
     font-size: .65rem;
     height: 1rem;
+}
+
+#dollar {
+    height: 0.65rem;
+    width: 0.5rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 10px;
 }
 
 .calculator-content-wrapper input {
@@ -96,11 +105,27 @@ input[type=number] {
     border-radius: 5px;
     border: none;
     transition: 400ms;
+    cursor: pointer;
 }
 .percentagem-section-2 input:hover,  .percentagem-section-1 input:hover {
     background-color: hsl(185, 41%, 84%);
     color: hsl(183, 100%, 15%) ;
 }
+
+#custom {
+    text-transform: capitalize;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(184, 14%, 56%);
+}
+
+#custom:focus {
+    text-align: right;
+}
+
+#custom:focus::placeholder {
+    color: transparent;
+}
+
 .number-of-people-label {
     color: hsl(184, 14%, 56%);
     font-weight: 700;
@@ -108,9 +133,6 @@ input[type=number] {
     font-size: .65rem;
     margin-bottom: 7px;
 }
-
-
-
 
 
 
@@ -123,6 +145,7 @@ input[type=number] {
 }
 
 .display-content-wrapper {
+    padding-top: 1rem;
     display: block;
     flex-direction: column;
     width: 85%;
@@ -133,6 +156,7 @@ input[type=number] {
 
 .tip-amount-and-total {
     width: 80%;
+    height: 3rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -143,10 +167,9 @@ input[type=number] {
 
 
 .tip-amount-and-total p {
-    font-size: 14px;
+    font-size: 12px;
     color: hsl(0, 0%, 100%);
     font-weight: 500;
-    margin-top: 1.5rem;
 }
 
 .tip-amount-and-total p > em {
@@ -154,9 +177,43 @@ input[type=number] {
     color: hsl(186, 14%, 43%);
 }
 
+#tip-amount-value, #total-value {
+    font-size: 1.5rem;
+    color: hsl(183, 91%, 30%) ;
+    font-weight: 700;
+    width: 65%;
+    text-align: right;
+    overflow: hidden;
+}
+
+#dollar-amount, #dollar-total {
+    width: 1.3rem;
+}
 
 
 
+
+
+
+#btn-reset {
+    background-color: hsl(183, 94%, 20%);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 130px;
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    color: hsl(183, 100%, 15%);
+    border-radius: 3px;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+#btn-reset:hover {
+    background-color: hsl(185, 41%, 84%);
+}
 
 
 
