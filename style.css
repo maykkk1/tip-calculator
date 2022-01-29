@@ -77,7 +77,13 @@ input[type=number] {
     height: 1.75rem;
     border-radius: 5px;
     outline-color: hsl(185, 41%, 84%);
+    padding-right: 15px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
 }
+
+    
+
 .calculator-content-wrapper p {
     color: hsl(184, 14%, 56%);
     font-weight: 700;
@@ -106,6 +112,7 @@ input[type=number] {
     border: none;
     transition: 400ms;
     cursor: pointer;
+    padding: 0;
 }
 .percentagem-section-2 input:hover,  .percentagem-section-1 input:hover {
     background-color: hsl(185, 41%, 84%);
@@ -126,6 +133,15 @@ input[type=number] {
     color: transparent;
 }
 
+
+.number-of-people-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .number-of-people-label {
     color: hsl(184, 14%, 56%);
     font-weight: 700;
@@ -133,6 +149,15 @@ input[type=number] {
     font-size: .65rem;
     margin-bottom: 7px;
 }
+
+#cant-be-zero {
+    font-size: .6rem;
+    color: rgba(255, 0, 0, 0.616);
+    margin-bottom: 0;
+    display: none;
+}
+
+
 
 
 
