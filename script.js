@@ -3,6 +3,7 @@ const btn10 = document.getElementById('btn-10%');
 const btn15 = document.getElementById('btn-15%');
 const btn25 = document.getElementById('btn-25%');
 const btn50 = document.getElementById('btn-50%');
+const custom = document.getElementById('custom');
 
 btn5.addEventListener('click', function (event) {
     calculate(5)
@@ -25,6 +26,10 @@ btn50.addEventListener('click', function (event) {
 });
 
 
+custom.addEventListener('change', function(event){
+    calculate(parseFloat(custom.value))
+});
+
 function calculate(percentage) {
     const numeroDePessoas = parseInt(document.getElementById('number-of-people').value);
     const bill = parseFloat(document.getElementById("bill-value").value);
@@ -32,7 +37,7 @@ function calculate(percentage) {
         document.getElementById('cant-be-zero').style.display = 'block';
         document.getElementById("number-of-people").style.border = "1px solid red";
     } else {
-        if (isNaN(bill) || isNaN(numeroDePessoas)) {
+        if (isNaN(bill) || isNaN(numeroDePessoas) || isNaN(percentage))  {
             document.getElementById("number-of-people").style.border = "none";
             document.getElementById('cant-be-zero').style.display = 'none';
         } else {
@@ -54,6 +59,8 @@ const btnReset = document.getElementById('btn-reset');
 btnReset.addEventListener('click', reset)
 
 function reset() {
+    document.getElementById("number-of-people").style.border = "none";
+    document.getElementById('cant-be-zero').style.display = 'none';
     document.getElementById('total-value').innerHTML = '$0.00'
     document.getElementById('tip-amount-value').innerHTML = '$0.00'
     document.getElementById('number-of-people').value = ''
