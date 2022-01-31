@@ -144,6 +144,10 @@ input[type=number] {
     color: hsl(184, 14%, 56%);
 }
 
+#custom:active {
+    color: hsl(183, 100%, 15%) ;
+}
+
 #custom:focus {
     text-align: right;
 }
@@ -261,11 +265,15 @@ input[type=number] {
 
 
 
-
-
 .attribution {
-    display: none;
+    position: absolute;
+    bottom: 0;
 }
+
+.attribution p, a {
+    font-size: 20px;
+}
+
 
 
 .colors {
@@ -290,6 +298,7 @@ color: hsl(0, 0%, 100%);
         width: 100%;
         height: max-content;
         margin-top: 150px;
+        margin-bottom: 20px;
     }
 
     .calculator {
@@ -307,6 +316,14 @@ color: hsl(0, 0%, 100%);
 
     #btn-reset {
         margin-top: 10px;
+    }
+
+    .attribution {
+        position: static;
+    }
+
+    .attribution p, a {
+        font-size: 11px;
     }
 
 
