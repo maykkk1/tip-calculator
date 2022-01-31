@@ -73,6 +73,15 @@ custom.addEventListener('change', setToZero);
 custom.addEventListener('change', calculate);
 numOfPeopleActivate.addEventListener('change', calculate);
 billActivate.addEventListener('change', calculate);
+billActivate.addEventListener('keyup',function(e){
+    if (e.which == 13) this.blur();
+});
+custom.addEventListener('keyup',function(e){
+    if (e.which == 13) this.blur();
+});
+numOfPeopleActivate.addEventListener('keyup',function(e){
+    if (e.which == 13) this.blur();
+});
 
 
 function calculate() {
