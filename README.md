@@ -6,7 +6,7 @@
 
 Essa é a minha solução para o desafio [Tip calculator app](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX), do Frontend Mentor.
 
-[SOLUÇÃO](https://relaxed-galileo-64825d.netlify.app/)
+[SOLUÇÃO](https://trusting-bohr-33bcee.netlify.app/)
 
 ## Feito com:
 
