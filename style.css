@@ -272,8 +272,13 @@ input[type=number] {
 
 .attribution p, a {
     font-size: 20px;
+    color: black;
 }
 
+.attribution a {
+    color: hsl(183, 100%, 15%) ;
+    font-weight: 700;
+}
 
 
 .colors {
