@@ -59,6 +59,7 @@ function resetBtnBackground () {
     document.getElementById('btn-25%').style.color= 'white';
     document.getElementById('btn-50%').style.backgroundColor= 'hsl(183, 100%, 15%)';
     document.getElementById('btn-50%').style.color= 'white';
+    document.getElementById('custom').value = 'custom'
 }
 
 
@@ -66,7 +67,16 @@ function resetBtnBackground () {
 
 function setToZero () {
     percentageBtn = 0
-    resetBtnBackground()
+    document.getElementById('btn-5%').style.backgroundColor= 'hsl(183, 100%, 15%)';
+    document.getElementById('btn-5%').style.color= 'white';
+    document.getElementById('btn-10%').style.backgroundColor= 'hsl(183, 100%, 15%)';
+    document.getElementById('btn-10%').style.color= 'white';
+    document.getElementById('btn-15%').style.backgroundColor= 'hsl(183, 100%, 15%)';
+    document.getElementById('btn-15%').style.color= 'white';
+    document.getElementById('btn-25%').style.backgroundColor= 'hsl(183, 100%, 15%)';
+    document.getElementById('btn-25%').style.color= 'white';
+    document.getElementById('btn-50%').style.backgroundColor= 'hsl(183, 100%, 15%)';
+    document.getElementById('btn-50%').style.color= 'white';
 }
 
 custom.addEventListener('change', setToZero);
